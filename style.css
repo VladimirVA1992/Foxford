@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #794FF9;
+}
+
+.container {
+    height: auto;
+    position: relative;    
+    padding: 75px 18%;
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        padding: 100px 10% 75px 10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 100px 4% 75px 4%;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1100px) {
+    .wrapper { 
+        justify-content: space-evenly;
+    }
+}
+
+.card {
+    position: relative;
+    width: 262px;
+    min-height: 310px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.card__discipline {
+    font-size: 12px;
+}
+
+.card__title {
+    min-height: 155px;
+}
+
+.card__title > .card__h3 {
+    font-size: 22px;
+    line-height: 125%;    
+}
+
+.info {
+    padding-bottom: 20px;
+}
+
+.info__item {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.info__text {
+    padding-left: 10px;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 12%;
+    height: 35px;
+    padding: 20px 20px 20px 30px;
+    border-radius: 5px 0 0 5px;
+}
+
+@media screen and (max-width: 1100px) {
+    .basket {
+        justify-content: center;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.basket__quantity {
+    position: absolute;
+    background-color: red;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.basket__quantity > span {
+    display: inline-block;
+    padding: 4px;
+}
+
+.basket__icon {
+    position: relative;
+    width: 70px;
+}
+
+.basket__text {
+    padding-right: 5px;
+    padding-left: 15px;    
+}
+
+.basket__link {
+    font-weight: bold;
+    color: deepskyblue;
+    font-size: 14px;
+}
+
+.notinbasket {
+    display: none;
+}
+
+.inbasket {
+    position: absolute;
+    right: 20px;
+    display: block;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: deepskyblue;
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btninbasket {
+    border: 2px solid deepskyblue;
+    background-color: #fff;
+    color: deepskyblue;
+}
+
+.transparency {
+    opacity: 0.3;
+}
